@@ -32,7 +32,7 @@ python3 -m venv .venv
 pip install -r requirements.txt
 ```
 
-Instead of pip one can use the faster alternative [uv](https://github.com/astral-sh/uv)
+Instead of pip one can use the faster alternative [uv](https://github.com/astral-sh/uv).
 
 ```bash
 uv venv
