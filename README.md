@@ -1,4 +1,4 @@
-# Performance Estimation Problem for SGD
+# NeurIPS 2025: Performance Estimation Problem for SGD without Variance Assumptions
 
 1. [Introduction](#Introduction)
 2. [Getting Started](#Getting-Started)
