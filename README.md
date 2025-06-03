@@ -1,4 +1,4 @@
-# NeurIPS 2025: PEP for SGD without Variance Assumptions
+# PEP for SGD without Variance Assumptions
 
 1. [Introduction](#Introduction)
 2. [Getting Started](#Getting-Started)
@@ -126,14 +126,14 @@ Contributions are welcome. Please open an issue to discuss the changes you would
 
 ## References
 
-<a id="1">[1]</a> Yet unpublished.
+<a id="1">[1]</a> Cortild, D., Ketels, L., Peypouquet, J., & Garrigos, G. (2025). New Tight Bounds for SGD without Variance Assumption: A Computer-Aided Lyapunov Analysis (No. arXiv:2505.17965). arXiv. https://doi.org/10.48550/arXiv.2505.17965.
 <br/>
 <a id="2">[2]</a> Taylor, A., & Bach, F. (2019). Stochastic first-order methods: Non-asymptotic and computer-aided
 analyses via potential functions. Proceedings of the 32nd Conference on Learning Theory,
-2934–2992. https://proceedings.mlr.press/v99/taylor19a.html
+2934–2992. https://proceedings.mlr.press/v99/taylor19a.html.
 <br/>
-<a id="3">[3]</a> MOSEK, A. (2025). MOSEK Optimizer API for Python. Release 11.0.20. http://www.mosek.com
+<a id="3">[3]</a> MOSEK, A. (2025). MOSEK Optimizer API for Python. Release 11.0.20. http://www.mosek.com.
 <br/>
 <a id="4">[4]</a> Goulart, P. J., & Chen, Y. (2024). Clarabel: An interior-point solver for conic programs with
-quadratic objectives (No. arXiv:2405.12762). arXiv. https://doi.org/10.48550/arXiv.2405.12762
+quadratic objectives (No. arXiv:2405.12762). arXiv. https://doi.org/10.48550/arXiv.2405.12762.
 
