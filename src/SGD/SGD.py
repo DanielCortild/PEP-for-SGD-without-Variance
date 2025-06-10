@@ -242,11 +242,12 @@ class SGD:
         self.param.a = ParameterList(value=a, name="a_k")
         rho = self.rho.value
         self.param.d = Parameter(value=rho, name="d")
+        self.param.rho = Parameter(value=rho, name="rho")
         e = np.array([self.vars[k][-1].value for k in range(self.NB_ITS)])
         self.param.e = ParameterList(value=e, name="e_k")
 
         # Set the bias parameter
-        self.param.bias = Parameter(value=self.value, name="rate")
+        self.param.bias = Parameter(value=self.value, name="bias")
 
         # Set the variance parameter
         try:
