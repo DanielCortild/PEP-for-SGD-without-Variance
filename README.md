@@ -9,9 +9,9 @@
 
 ## Introduction
 
-This code aims to implement a performance estimation problem for Stochastic Gradient Descent (SGD) with or without
-bounded variance assumption. The main results, being without bounded variance assumption, are summarized in [[1]](#1).
-The problem model and methodology is inspired by [[2]](#2).
+This code aims to implement a performance estimation problem for Stochastic Gradient Descent (SGD) without
+bounded variance assumption. The main results, as well as the methodology employed to implement them, are summarized
+in [[1]](#1).
 
 ## Getting Started
 
@@ -28,7 +28,7 @@ The recommended practice is to create a virtual environment dedicated to the pro
 
 ```bash
 python3 -m venv .venv
-.venv\bin\activate
+. .venv\bin\activate
 pip install -r requirements.txt
 ```
 
@@ -53,8 +53,8 @@ sgd = get_worst_instance(gamma=0.5, T=2, mu=0, L=1)
 - `additional_constraints` (_function_): (Optional) Additional conditions to add to the SGD class. Should be a function
   that takes in the SGD class object and modifies it in place.
 - `solver` (_str_): The solver to use. Possible values are:
-    - "MOSEK": Use the MOSEK solver [[3]](#3) (default).
-    - "CLARABEL": Use the Clarabel solver [[4]](#4). This solver has purposefully been degraded with a lower
+    - "MOSEK": Use the MOSEK solver [[2]](#2) (default).
+    - "CLARABEL": Use the Clarabel solver [[3]](#3). This solver has purposefully been degraded with a lower
       tolerance to reach different solutions. It is not recommended to use this solver for real problems.
 
 #### Returns
@@ -117,13 +117,9 @@ functionality, and may be used as a template for further experiments.
 <a id="1">[1]</a> Cortild, D., Ketels, L., Peypouquet, J., & Garrigos, G. (2025). New Tight Bounds for SGD without
 Variance Assumption: A Computer-Aided Lyapunov Analysis. arXiv preprint arXiv:
 2505.17965. https://doi.org/10.48550/arXiv.2505.17965.
+<br />
+<a id="2">[2]</a> MOSEK, A. (2025). MOSEK Optimizer API for Python. Release 11.0.20. http://www.mosek.com.
 <br/>
-<a id="2">[2]</a> Taylor, A., & Bach, F. (2019). Stochastic first-order methods: Non-asymptotic and computer-aided
-analyses via potential functions. Proceedings of the 32nd Conference on Learning Theory,
-2934–2992. https://proceedings.mlr.press/v99/taylor19a.html.
-<br/>
-<a id="3">[3]</a> MOSEK, A. (2025). MOSEK Optimizer API for Python. Release 11.0.20. http://www.mosek.com.
-<br/>
-<a id="4">[4]</a> Goulart, P. J., & Chen, Y. (2024). Clarabel: An interior-point solver for conic programs with
+<a id="3">[3]</a> Goulart, P. J., & Chen, Y. (2024). Clarabel: An interior-point solver for conic programs with
 quadratic objectives. arXiv preprint arXiv:2405.12762. https://doi.org/10.48550/arXiv.2405.12762.
 
